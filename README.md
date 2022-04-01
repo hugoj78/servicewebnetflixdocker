@@ -18,7 +18,7 @@ FITAMANT Guillaume
 Pour lancer les bases de données et les API
 
 ```
-docker-compose up 
+docker compose up 
 ```
 
 Ouvrir votre browser 🌏 à l'url suivante : http://localhost:3000/ pour acceder au frontend
