@@ -1,0 +1,127 @@
+version: '3.7'
+services:
+  
+  db_poster:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'db_poster'
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_ROOT_PASSWORD: 'password'
+      MYSQL_TCP_PORT: 3308
+    ports:
+      - '3308:3308'
+    expose:
+      - '3308'
+    volumes:
+      - my-db_poster:/var/lib/mysql
+    networks:
+      - mynetwork
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      timeout: 10s
+      retries: 10
+  api-poster:
+    container_name: api-poster
+    image: ghcr.io/hugoj78/servicewebnetflixposter:release
+    environment:
+      DB_URI: "mysql+pymysql://user:password@db_poster:3308/db_poster"
+    ports :
+      - 8091:8091
+    networks:
+      - mynetwork
+    depends_on:
+      db_poster:
+        condition: service_healthy
+
+  db_compte:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'db_compte'
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_ROOT_PASSWORD: 'password'
+      MYSQL_TCP_PORT: 3307
+    ports:
+      - '3307:3307'
+    expose:
+      - '3307'
+    volumes:
+      - my-db_compte:/var/lib/mysql
+    networks:
+      - mynetwork
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      timeout: 10s
+      retries: 10
+  api-compte:
+    container_name: api-compte
+    image: ghcr.io/hugoj78/servicewebnetflixcompte:release
+    environment:
+      DB_URI: "mysql+pymysql://user:password@db_compte:3307/db_compte"
+    ports:
+      - 8090:8090
+    networks:
+      - mynetwork
+    depends_on:
+      db_compte:
+        condition: service_healthy
+  
+  db_media:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'db_media'
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_ROOT_PASSWORD: 'password'
+      MYSQL_TCP_PORT: 3309
+    ports:
+      - '3309:3309'
+    expose:
+      - '3309'
+    volumes:
+      - my-db_media:/var/lib/mysql
+    networks:
+      - mynetwork
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      timeout: 10s
+      retries: 10
+  api-media:
+    container_name: api-media
+    image: ghcr.io/hugoj78/servicewebnetflixmedia:release
+    environment:
+      DB_URI: "mysql+pymysql://user:password@db_media:3309/db_media"
+      POSTER_URL: "http://api-poster:8091"
+      COMPTE_URL: "http://api-compte:8090"
+    ports :
+      - 8092:8092
+    networks:
+      - mynetwork
+    depends_on:
+      db_media:
+        condition: service_healthy
+  
+  frontend:
+    container_name: frontend
+    image: ghcr.io/hugoj78/servicewebnetflixfront:release
+    ports:
+      - 3000:3000
+    networks:
+      - mynetwork
+    environment:
+      CHOKIDAR_USEPOLLING: 'true'
+      REACT_APP_SERVICEWEB_NETFLIX_COMPTE: "http://0.0.0.0:8090"
+      REACT_APP_SERVICEWEB_NETFLIX_POSTER: "http://0.0.0.0:8091"
+      REACT_APP_SERVICEWEB_NETFLIX_MEDIA: "http://0.0.0.0:8092"
+
+volumes:
+  my-db_poster:
+  my-db_compte:
+  my-db_media:
+networks:
+  mynetwork:
+    name: "mynetwork"
