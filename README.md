@@ -1,8 +1,6 @@
 # 🚀 Netflix : Web Service Media Docker Wrapper 🚀
 
-[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
-
-![bdd-mysql](https://user-images.githubusercontent.com/12957553/161134972-def914ee-a09d-4904-ae68-0a1fa91984a2.svg)
+![made-with-docker](https://user-images.githubusercontent.com/12957553/161932934-00091953-a6cf-4b14-88e5-417c98df49c3.svg)
 
 EGU Hugo-Jean
 
