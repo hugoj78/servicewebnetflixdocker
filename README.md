@@ -14,7 +14,7 @@ Voir le fichier "Presentation.pptx"
 
 - docker installed
 - docker-compose
-- python installed (optionnal)
+- python and pip installed (optionnal)
 
 ### Installation 🔌
 
@@ -29,6 +29,10 @@ Si vous souhaitez integrer des données mockup dans les differentes bases de don
 
 ```
 python main.py 
+```
+
+```
+pip install requirements.txt
 ```
 
 Ouvrir votre browser 🌏 à l'url suivante : http://localhost:3000/ pour acceder au frontend
