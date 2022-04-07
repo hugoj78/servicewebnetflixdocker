@@ -20,15 +20,12 @@ Pour lancer les bases de données et les API
 docker compose up 
 ```
 
-<<<<<<< HEAD
-Ouvrir votre browser 🌏 à l'url suivante : http://localhost:3000/ pour acceder au frontend
-=======
+
 Si vous souhaitez integrer des données mockup dans les differentes bases de données (optionnal)
 
 ```
 python main.py 
 ```
 
-
 Ouvrir votre browser 🌏 à l'url suivante : http://localhost:3000/ pour acceder au frontend
->>>>>>> a57c33cee32e518f3448683581841be6227e2400
+
