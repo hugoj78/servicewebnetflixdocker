@@ -28,11 +28,11 @@ docker compose up
 Si vous souhaitez integrer des données mockup dans les differentes bases de données (optionnal)
 
 ```
-python main.py 
+pip install requirements.txt
 ```
 
 ```
-pip install requirements.txt
+python main.py 
 ```
 
 Ouvrir votre browser 🌏 à l'url suivante : http://localhost:3000/ pour acceder au frontend
