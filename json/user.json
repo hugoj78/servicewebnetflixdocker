@@ -1,0 +1,34 @@
+{
+    "data" : [
+        {
+          "id": 1,
+          "admin": true,
+          "name": "hugo",
+          "email": "hugo@gmail.com",
+          "password": "password",
+          "status": "ACTIF",
+          "adress": "12 rue de la ville",
+          "country": "France"
+        },
+        {
+          "id": 2,
+          "admin": true,
+          "name": "guillaume",
+          "email": "guillaume@gmail.com",
+          "password": "password",
+          "status": "ACTIF",
+          "adress": "12 rue d'ici ",
+          "country": "Suede"
+        },
+        {
+          "id": 3,
+          "admin": false,
+          "name": "Adrien",
+          "email": "adrien@gmail.com",
+          "password": "password",
+          "status": "PASSIF",
+          "adress": "123 rue du celibat",
+          "country": "France"
+        }
+      ]
+}

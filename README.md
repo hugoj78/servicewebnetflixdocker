@@ -12,6 +12,7 @@ FITAMANT Guillaume
 
 - docker installed
 - docker-compose
+- python installed (optionnal)
 
 ### Installation 🔌
 
@@ -20,5 +21,12 @@ Pour lancer les bases de données et les API
 ```
 docker-compose up 
 ```
+
+Si vous souhaitez integrer des données mockup dans les differentes bases de données (optionnal)
+
+```
+python main.py 
+```
+
 
 Ouvrir votre browser 🌏 à l'url suivante : http://localhost:3000/ pour acceder au frontend

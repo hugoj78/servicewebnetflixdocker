@@ -1,0 +1,52 @@
+{
+    "data" : [
+        {
+          "id": 1,
+          "title": "Sonic, le film",
+          "kind": "film",
+          "category": "comedy",
+          "content": "https://www.youtube.com/watch?v=NCZTYdAP6w0",
+          "release_date": "09/02/2020",
+          "country": "France",
+          "description": "Les mésaventures de Sonic, alors qu'il tente de naviguer dans la complexité de la vie sur Terre, aux côtés de son nouveau meilleur ami, Tom Wachowski, un humain. Sonic et Tom unissent leurs forces pour tenter d'empêcher le terrible Dr. Robotnik de capturer Sonic, ce dernier souhaitant utiliser son immense pouvoir pour dominer le monde.",
+          "status": "ACTIVED",
+          "id_poster": 1
+        },
+        {
+          "id": 2,
+          "title": "Sonic, le film 2",
+          "kind": "film",
+          "category": "comedy",
+          "content": "https://www.youtube.com/watch?v=8aNsT2z7ONc",
+          "release_date": "30/03/2022",
+          "country": "France",
+          "description": "Bien installé dans la petite ville de Green Hills, Sonic veut maintenant prouver qu'il a l'étoffe d'un véritable héros. Un défi de taille se présente à lui quand le Dr Robotnik refait son apparition. Accompagné de son nouveau complice Knuckles, ils est en quête d'une émeraude dont le pouvoir permettrait de détruire l'humanité toute entière. Pour s'assurer que l'émeraude ne tombe entre de mauvaises mains, Sonic fait équipe avec Tails. Commence alors un voyage à travers le monde.",
+          "status": "ACTIVED",
+          "id_poster": 2
+        },
+        {
+          "id": 3,
+          "title": "Peaky Blinders",
+          "kind": "serie",
+          "category": "documentaire",
+          "content": "https://www.youtube.com/watch?v=OU1iZoOrkVo",
+          "release_date": "12/09/2013",
+          "country": "France",
+          "description": "Birmingham, en 1919. Un gang familial règne sur un quartier de la ville : les Peaky Blinders, ainsi nommés pour les lames de rasoir qu'ils cachent dans la visière de leur casquette.",
+          "status": "ACTIVED",
+          "id_poster": 3
+        },
+        {
+          "id": 4,
+          "title": "Drive to survive",
+          "kind": "serie",
+          "category": "documentaire",
+          "content": "https://www.youtube.com/watch?v=wtJPe1ksS6E",
+          "release_date": "08/03/2020",
+          "country": "France",
+          "description": "Pilotes, directeurs ou propriétaires d'écuries. Qu'ils soient sur le circuit ou dans le paddock, ils sont prêts à tout et vivent la saison de Formule 1 à 300 à l'heure.",
+          "status": "DELETED",
+          "id_poster": 4
+        }
+      ]
+}

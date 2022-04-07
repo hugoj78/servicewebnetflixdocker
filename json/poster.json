@@ -1,0 +1,32 @@
+{
+    "data" : [
+        {
+          "id": 1,
+          "id_media": 1,
+          "morning_poster": "https://fr.web.img3.acsta.net/pictures/20/02/10/17/16/0746079.jpg",
+          "daily_poster": "https://www.cinehorizons.net/sites/default/files/affiches/1815335914-sonic-le-film.jpg",
+          "evening_poster": "https://media2.woopic.com/api/v1/images/174%2Faudiovisual%2Fmovie%2F1c3%2F251%2F3bebd11eb2d086a004ca23f39a%2Fmovies-229574-21706049.jpg?format=822x700&quality=85"
+        },
+        {
+          "id": 2,
+          "id_media": 2,
+          "morning_poster": "https://fr.web.img5.acsta.net/pictures/22/03/14/15/39/4137538.jpg",
+          "daily_poster": "https://ayther.fr/wp-content/uploads/2022/03/sonic-2-age.jpg",
+          "evening_poster": "https://sm.ign.com/t/ign_fr/gallery/s/sonic-the-/sonic-the-hedgehog-2-character-posters_9u1u.600.jpg"
+        },
+        {
+          "id": 3,
+          "id_media": 3,
+          "morning_poster": "https://imgsrc.cineserie.com/2021/05/peaky-blinders-online.jpg?ver=1",
+          "daily_poster": "https://leclaireur.fnac.com/wp-content/uploads/2022/03/incendiepeaky.jpg",
+          "evening_poster": "https://www.tomsguide.fr/content/uploads/sites/2/2022/03/peacky-familly.jpg"
+        },
+        {
+          "id": 4,
+          "id_media": 4,
+          "morning_poster": "https://www.journaldugeek.com/content/uploads/2022/03/formule-1-netflix.jpg",
+          "daily_poster": "https://f1i.autojournal.fr/wp-content/uploads/sites/17/2019/12/drive-to-survive.png",
+          "evening_poster": "https://m.media-amazon.com/images/M/MV5BMzVkMGU0YWMtOWQxMC00MjFhLTg1NjAtMDFlZTZlYzJlMjlhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg"
+        }
+      ]
+}
