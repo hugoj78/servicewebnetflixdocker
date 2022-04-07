@@ -6,6 +6,10 @@ EGU Hugo-Jean
 
 FITAMANT Guillaume
 
+### Presentation
+
+Voir le fichier "Presentation.pptx"
+
 ### Pre requis 🐳
 
 - docker installed
