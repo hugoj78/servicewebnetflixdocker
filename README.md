@@ -28,7 +28,7 @@ docker compose up
 Si vous souhaitez integrer des données mockup dans les differentes bases de données (optionnal)
 
 ```
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 ```
